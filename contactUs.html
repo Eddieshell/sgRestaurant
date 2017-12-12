@@ -15,6 +15,24 @@
                 bottom: 0;
                 position: fixed;
             }
+            .textBox {
+                width: 200px;
+            }
+            label {
+                width: 250px;
+                margin-left: 25%;
+                margin-right: 15px;
+                
+                clear: both;
+                float: left;
+                text-align: right;
+            }
+            .inputDiv {
+                margin-top: 15px;
+            }
+            #submitRequest {
+                margin-left: 49%;
+            }
         </style>
     </head>
     <header>
@@ -29,6 +47,58 @@
         
     </header>
     <body>
+        <form action = "#" meathod = "post">
+            <div style = "margin-top: 100px">
+                <label id = "nameLabel" for = "name" >Name:</label>
+                <input class = "textBox" type = "text" id = "name" name = "name">
+            </div>
+            <div class ="inputDiv">
+                <label id = "emailLabel" for = "email" >Email:</label>
+                <input type = "text" class = "textBox" id = "email" name = "email">
+            </div>
+            <div class ="inputDiv" >
+                <label id = "phoneLabel" for = "phone" >Phone:</label>
+                <input type = "text" class = "textBox" id = "phone" name = "phone">
+            </div>
+            <div class ="inputDiv">
+                <label id = reasonForInquiryLabel for = "reasonForInquiry">Reason for Inquiry</label>
+                <select class = "textBox">
+                    <option>Catering</option>
+                    <option>Private Party</option>
+                    <option>Feedback</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class ="inputDiv">
+                <label id="informationLabel" for = "information">Additional Information:</label>
+                <textarea class = "textBox" id = "information" name = "information"></textarea>
+            </div>
+            <div class ="inputDiv">
+                <label id = "haveVisitedLabel" for = "haveVisited" >Have you been to our restaurant?</label>
+                <input type = "radio" id = "haveVisited" name= "haveVisited" value = "no" checked>
+                <span>No</span>
+                <input type = "radio" id = "haveVisited" name= "haveVisited" value = "yes">
+                <span>Yes</span>
+            </div>
+            <div class ="inputDiv">
+                <label id="contactDayLabel" for = "contactDay">Best days to contact you?</label>
+                <input type = "checkbox" id = "contactDay" name = "contactDay" value = "monday">
+                <span>M</span>
+                <input type = "checkbox" id = "contactDay" name = "contactDay" value = "tuesday">
+                <span>T</span>
+                <input type = "checkbox" id = "contactDay" name = "contactDay" value = "wensday">
+                <span>W</span>
+                <input type = "checkbox" id = "contactDay" name = "contactDay" value = "thursday">
+                <span>T</span>
+                <input type = "checkbox" id = "contactDay" name = "contactDay" value = "friday">
+                <span>F</span>
+                    
+            </div>
+            <div class ="inputDiv" >
+                <input type = "submit" id ="submitRequest" value = "Send Request">
+            </div>
+
+        </form>
         
 
     </body>
