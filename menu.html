@@ -3,7 +3,9 @@
     <head>
         <title>Tipatina - Menu</title>
         <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+        <link rel="stylesheet" type ="text/css" href="bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+        
         <style>
             
             a.navLink {
@@ -12,6 +14,7 @@
 
             .centerText {
                 text-align: center;
+                color:aliceblue;
             }
 
             h4 {
@@ -22,22 +25,31 @@
         </style>
     
     </head>
-    <body>
-    <header>
+    <body style= "background-color: #443bb3;">
+        <div class = "container-fluid">
+    <div>
         <H1 class = "name">Tipatina</H1>
     <hr>
-    <div>
+    <div class = "row">
+    <div class="col-xs-4">
         <a href ="index.html" class = "navLink">Home</a>
+    </div>
+    <div class="col-xs-4">
         <a href ="menu.html" class = "navLink">Menu</a>
+    </div>
+    <div class="col-xs-4">
         <a href ="contactUs.html" class = "navLink">Contact Us</a>
+    </div>
+    </div>
     </div>
     <hr>
         
-    </header>
-    <div class="container">
+</div>
+    <div class="holder row">
     
-        <div class = "content">
-            <div class ="menuItem centerText">
+        <div class = "col-md-9 col-xs-12" style="padding-left: 10%;">
+            <div class = "row content">
+            <div class ="col-md-4 col-xs-12 centerText">
                 <h4>Burgers and Fries</h4>
                 <p>
                     An American Classic!<br>
@@ -47,7 +59,7 @@
                 </p>
                 <h4>$7.95</h4>
             </div>
-            <div class ="menuItem centerText">
+            <div class ="col-md-4 col-xs-12 centerText">
                 <h4>Hot Dog and Chips</h4>
                 <p>
                     A Summer Classic! <br>
@@ -57,7 +69,7 @@
                 </p>
                 <h4>$7.95</h4>
             </div>
-            <div class = "menuItem centerText">
+            <div class = "col-md-4 col-xs-12 centerText">
                 <h4>Italian Sausage and Peppers</h4>
                 <p>
                     An All-Time Favorite!!<br>
@@ -67,9 +79,10 @@
                 </p>
                 <h4>$10.95</h4>
             </div>
+            
         </div>
-        <div class = "content">
-            <div class ="menuItem centerText">
+        <div class = "row content">
+            <div class ="col-md-4 col-xs-12 centerText">
                <h4>Tenderloin Sandwich and Chips</h4>
                <p>
                    Really Hits the Spot!<br>
@@ -79,7 +92,7 @@
                 </p>
                 <h4>$8.95</h4> 
             </div>
-            <div class ="menuItem centerText ">
+            <div class ="col-md-4 col-xs-12 centerText">
                 <h4>House Salad</h4>
                 <p>
                     On the Lighter Side<br>
@@ -90,7 +103,7 @@
                 </p>
                 <h4>$6.95</h4>
             </div>
-            <div class = "menuItem centerText">
+            <div class = "col-md-4 col-xs-12 centerText">
                 <h4>Brisket Sandwich and Fries</h4>
                 <p>
                     A taste of Texas!<br>
@@ -103,7 +116,9 @@
                 </p>
                 <h4>$7.95</h4>
             </div>
+            </div>
         </div>
+        <div class="col-md-3 col-xs-12">
         <div class ="beverageMenu">
             <table>
                 <thead>
@@ -131,8 +146,11 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
+        </div>
 
         </div>
+        </div> 
 
     </div>
     <footer>
@@ -140,5 +158,6 @@
          <p>1234 St Johns St., Infirmary, La. 33543</p>
          <p>813-539-9519</p>
     </footer>
+    </div>
 </body>
 </html>
